@@ -1,3 +1,19 @@
+<script>
+import algoliasearch from "algoliasearch/lite";
+import "instantsearch.css/themes/algolia-min.css";
+
+export default {
+  data() {
+    return {
+      searchClient: algoliasearch(
+        "4LZIRXPV97",
+        "5b453261a3e6d7d130c764baae606074"
+      ),
+    };
+  },
+};
+</script>
+
 <template>
   <div>
     <header class="header">
@@ -28,22 +44,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import algoliasearch from "algoliasearch/lite";
-import "instantsearch.css/themes/algolia-min.css";
-
-export default {
-  data() {
-    return {
-      searchClient: algoliasearch(
-        "4LZIRXPV97",
-        "5b453261a3e6d7d130c764baae606074"
-      )
-    };
-  }
-};
-</script>
 
 <style>
 body,
